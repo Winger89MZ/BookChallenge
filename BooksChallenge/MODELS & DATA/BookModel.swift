@@ -7,8 +7,8 @@
 
 import Foundation
 
-class BookModel {
-    var books = [Book]()
+class BookModel: ObservableObject {
+    @Published var books = [Book]()
     
     init() {
         print("now trying to init")

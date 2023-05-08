@@ -10,9 +10,9 @@ import Foundation
 struct Book: Identifiable, Decodable {
     let title: String
     let author: String
-    let isFavourite: Bool
-    let currentPage: Int
-    let rating: Int
+    var isFavourite: Bool
+    var currentPage: Int
+    var rating: Int
     let id: Int
     let content: [String]
 }

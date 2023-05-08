@@ -12,6 +12,7 @@ struct BooksChallengeApp: App {
     var body: some Scene {
         WindowGroup {
             LibraryView()
+                .environmentObject(BookModel())
         }
     }
 }
