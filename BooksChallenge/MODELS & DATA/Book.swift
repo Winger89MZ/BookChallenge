@@ -15,4 +15,5 @@ struct Book: Identifiable, Decodable {
     var rating: Int
     let id: Int
     let content: [String]
+    var savedPage: Int
 }

@@ -38,10 +38,14 @@ struct LibraryView: View {
                                     HStack {
                                         Text(myBooks.books[b].title).font(.title.bold()).foregroundColor(.black)
                                         Spacer()
-                                        
+
                                         Image(systemName: myBooks.books[b].isFavourite ? "star.fill" : "star")
                                             .foregroundColor(.accentColor)
                                             .font(.system(size: 30).bold())
+//                                        Spacer()
+//                                        Text("\(myBooks.books[b].rating)")
+//                                            .foregroundColor(.accentColor)
+//                                            .font(.system(size: 30).bold())
                                         
                                         
                                     }.padding(.horizontal)
